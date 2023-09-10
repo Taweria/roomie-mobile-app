@@ -1,0 +1,39 @@
+.menu{
+    margin-top: 40px;
+    font-family: 'Readex Pro', sans-serif;
+    visibility: hidden;
+
+    &.visible{
+        visibility: visible;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+
+        li{
+
+            a{
+                color: $--green;
+                text-decoration: none;
+                padding: 1rem 2rem;
+
+                &:visited{
+                    color: $--green;
+                }
+    
+                &:hover, &.active{
+                    color: $--white;
+                    background-color: $--green;
+                    border: 1px solid $--green;
+                    border-radius: 30px;
+                }
+
+            }
+
+        }
+    }
+
+}

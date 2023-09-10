@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
 
 @font-face {
-    font-family: Post No Bills Colombo Light;
-    src: url(../../storage/postnobillscolombo-light.ttf);
+    font-family: "Post No Bills Colombo Light";
+    src: "../../storage/postnobillscolombo-light.otf" format("otf");
  }
 
 // font-family: 'Readex Pro', sans-serif;
 // font-family: 'Mansalva', cursive;
+// font-family: 'Khand', sans-serif;

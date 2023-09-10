@@ -1,0 +1,26 @@
+.best-seller{
+    margin-top: 2rem;
+    .best-seller__hero--green{
+        width: 100vw;
+        height: 400px;
+        background-color: $--green;
+
+        h2{
+            color: $--white;
+            font-family: 'Mansalva', cursive;
+            font-size: 3rem;
+            margin: 1rem 2rem;
+            padding-top: 3rem;
+        }
+    
+        img{
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(20px);
+        }
+    }
+
+}
