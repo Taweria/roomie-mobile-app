@@ -2,6 +2,7 @@
     margin-top: 40px;
     font-family: 'Readex Pro', sans-serif;
     visibility: hidden;
+    z-index: 99;
 
     &.visible{
         visibility: visible;
@@ -10,7 +11,7 @@
     ul{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         text-align: center;
 
         li{
@@ -18,7 +19,8 @@
             a{
                 color: $--green;
                 text-decoration: none;
-                padding: 1rem 2rem;
+                padding: 0.5rem 1rem;
+
 
                 &:visited{
                     color: $--green;

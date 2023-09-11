@@ -1,7 +1,9 @@
 header{
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: $--white;
+    top: 0;
 }
 
 .title{
@@ -12,6 +14,7 @@ header{
         color: $--green;
         font-size: 2rem;
         font-family: 'Readex Pro', sans-serif;
+        margin-top: 10px;
     }
 
     button{
@@ -19,9 +22,11 @@ header{
         border: 1px solid $--green;
         border-radius: 100%;
         padding: 1rem;
+        margin-right: 2rem;
+        cursor: pointer;
     }
 
-    img{
+    .title__button--img{
         width: 20px;
         height: auto;
         filter: invert(100%);

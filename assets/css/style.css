@@ -60,9 +60,11 @@ table {
   src: "../../storage/postnobillscolombo-light.otf" format("otf");
 }
 header {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  background-color: #F1F0EC;
+  top: 0;
 }
 
 .title {
@@ -73,14 +75,17 @@ header {
   color: #053D1E;
   font-size: 2rem;
   font-family: "Readex Pro", sans-serif;
+  margin-top: 10px;
 }
 .title button {
   background-color: #053D1E;
   border: 1px solid #053D1E;
   border-radius: 100%;
   padding: 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
 }
-.title img {
+.title .title__button--img {
   width: 20px;
   height: auto;
   filter: invert(100%);
@@ -90,6 +95,7 @@ header {
   margin-top: 40px;
   font-family: "Readex Pro", sans-serif;
   visibility: hidden;
+  z-index: 99;
 }
 .menu.visible {
   visibility: visible;
@@ -97,13 +103,13 @@ header {
 .menu ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
 }
 .menu ul li a {
   color: #053D1E;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
 }
 .menu ul li a:visited {
   color: #053D1E;
@@ -115,6 +121,13 @@ header {
   border-radius: 30px;
 }
 
+body {
+  margin-top: 30vh;
+}
+
+.hero {
+  margin-top: 25px;
+}
 .hero .hero__img--chair {
   width: 120px;
   height: auto;
@@ -176,6 +189,7 @@ header {
   font-size: 3rem;
   margin: 1rem 2rem;
   padding-top: 3rem;
+  text-align: center;
 }
 .best-seller .best-seller__hero--green img {
   width: 350px;
