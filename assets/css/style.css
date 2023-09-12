@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -59,6 +60,52 @@ table {
   font-family: "Post No Bills Colombo Light";
   src: "../../storage/postnobillscolombo-light.otf" format("otf");
 }
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  width: 400px;
+  height: 80px;
+  background: lightgrey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "Discover your style →";
+  text-align: center;
+  line-height: 4rem;
+  color: #F1F0EC;
+  font-family: "Readex Pro", sans-serif;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 180px;
+  height: 70px;
+  background: #053D1E;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #FF94E2;
+}
+
+input:checked + label:after {
+  content: "← Discover your style";
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
 header {
   width: 100%;
   padding: 1rem;
@@ -211,4 +258,20 @@ body {
   display: block;
   margin: 0 auto;
   transform: translateY(20px);
+}
+.best-seller .best-seller__description {
+  margin-top: 80px;
+}
+.best-seller .best-seller__description h3 {
+  text-align: center;
+  font-family: "Khand", sans-serif;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+.best-seller .best-seller__description p {
+  font-family: "Readex Pro", sans-serif;
+  border-top: 3px dashed #1F212A;
+  margin: 1rem 2rem;
+  padding-top: 2rem;
+  line-height: 1.5rem;
 }
