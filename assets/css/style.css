@@ -79,7 +79,7 @@ label {
 label:after {
   content: "Discover your style →";
   text-align: center;
-  line-height: 4rem;
+  line-height: 4.5rem;
   color: #F1F0EC;
   font-family: "Readex Pro", sans-serif;
   position: absolute;
