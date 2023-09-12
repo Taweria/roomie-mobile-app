@@ -1,9 +1,7 @@
 .categories{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
     
     .categories__card{
+
         
         .categories__card--title{
             color: $--white;
