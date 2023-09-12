@@ -65,6 +65,7 @@ header {
   position: fixed;
   background-color: #F1F0EC;
   top: 0;
+  z-index: 99;
 }
 
 .title {
@@ -123,6 +124,7 @@ header {
 
 body {
   margin-top: 30vh;
+  background-color: #F1F0EC;
 }
 
 .hero {
@@ -155,12 +157,18 @@ body {
 .categories {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
 }
-.categories img {
-  width: 110px;
+.categories .categories__card .categories__card--title {
+  color: #F1F0EC;
+  text-shadow: 0.5px 0.5px #1F212A;
+  font-size: 1rem;
+  transform: rotate(-90deg) translateX(-250px) translateY(35px);
+  text-align: center;
+}
+.categories .categories__card .categories__card--img {
+  width: 100px;
   height: 300px;
-  background-color: aquamarine;
   border-radius: 20px;
   transition: width 0.5s;
   overflow: hidden;
@@ -168,11 +176,16 @@ body {
   object-position: 80%;
   transition: all 0.5s;
 }
-.categories img:hover, .categories img:focus {
+.categories .categories__card .categories__card--img:hover, .categories .categories__card .categories__card--img:focus {
   width: 300px;
   transition: all 0.5s;
   transform: scale(1);
   object-position: unset;
+}
+
+.categories__card:hover .categories__card--title {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
 }
 
 .best-seller {
@@ -198,4 +211,4 @@ body {
   display: block;
   margin: 0 auto;
   transform: translateY(20px);
-}/*# sourceMappingURL=style.css.map */
+}
