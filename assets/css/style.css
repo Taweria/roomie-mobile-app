@@ -64,16 +64,18 @@ input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
+  position: relative;
 }
 
 label {
-  cursor: pointer;
+  cursor: grab;
   width: 400px;
   height: 80px;
   background: lightgrey;
   display: block;
   border-radius: 100px;
   position: relative;
+  user-select: none;
 }
 
 label:after {
@@ -107,7 +109,7 @@ label:active:after {
 }
 
 .scrollbar {
-  height: 50vh;
+  height: 350px;
   width: 410px;
   background: #F1F0EC;
   overflow-y: hidden;
@@ -325,4 +327,4 @@ body {
   width: 400px;
   height: auto;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */
